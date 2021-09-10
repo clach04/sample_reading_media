@@ -8,7 +8,6 @@ echo    7z
 # TODO prc/pdb?
 # TODO azw
 # TODO azw3
-# TODO pdf
 # TODO CBZ/CBR/CBT/CB7
 # TODO metadata
 
@@ -19,6 +18,8 @@ pandoc -o test_book.html test_book.md
 #pandoc -o test_book.rtf test_book.md   # does not generate correct rtf
 pandoc -o test_book.odt test_book.md
 pandoc -o test_book.docx test_book.md
+
+pandoc -o test_book.pdf --metadata title=test_book_pdf --pdf-engine wkhtmltopdf test_book.md
 
 pandoc -o test_book.fb2 test_book.md
 pandoc -o test_book.epub --metadata title=test_book_epub test_book.md
