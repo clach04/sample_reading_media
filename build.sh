@@ -3,6 +3,15 @@ echo requires
 echo    pandoc - known to work with version 2.7.3
 echo    7z
 
+# TODO hand crafted html
+# TODO mobi
+# TODO prc/pdb?
+# TODO azw
+# TODO azw3
+# TODO pdf
+# TODO CBZ/CBR/CBT/CB7
+# TODO metadata
+
 cp test_book.md test_book.txt
 
 pandoc -o test_book.html test_book.md
