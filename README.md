@@ -26,5 +26,20 @@ LGPL license, so feel free to use in/with your projects. If you modify them, sha
 
 TODO
 
-  * add images (e.g. to html, embedded and linked)
-  * metadata
+  * add images (e.g. to html, embedded and linked, epub, etc.)
+  * hand crafted html
+  * rtf
+  * mobi
+  * prc/pdb?
+  * azw
+  * azw3
+  * add comics
+      * CBZ/CBR/CBT/CB7
+      * epub with images only
+  * metadata for formats that support it
+      * epub
+      * fb2
+      * mobi
+      * azw/azw3
+      * pdf
+      * Comic metadata; zip comment or a ComicInfo.xml - see https://github.com/dickloraine/EmbedComicMetadata and https://github.com/comictagger/comictagger
