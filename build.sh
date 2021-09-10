@@ -24,5 +24,7 @@ pandoc -o test_book.pdf --metadata title=test_book_pdf --pdf-engine wkhtmltopdf 
 pandoc -o test_book.fb2 test_book.md
 pandoc -o test_book.epub --metadata title=test_book_epub test_book.md
 
+#pandoc -o test_book.mobi test_book.md  # generates html!?
+
 7z a test_book_md.zip test_book.md
 7z a test_book_txt.zip test_book.txt
