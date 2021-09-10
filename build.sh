@@ -18,15 +18,15 @@ cp test_book.md test_book.txt
 pandoc -o test_book.html test_book.md
 
 #pandoc -o test_book.rtf test_book.md   # does not generate correct rtf
-pandoc -o test_book.odt test_book.md
-pandoc -o test_book.docx test_book.md
+pandoc -o test_book_odt.odt test_book.md
+pandoc -o test_book_docx.docx test_book.md
 
-pandoc -o test_book.pdf --metadata title=test_book_pdf --pdf-engine wkhtmltopdf test_book.md
+pandoc -o test_book_pdf.pdf --metadata title=test_book_pdf --pdf-engine wkhtmltopdf test_book.md
 
-pandoc -o test_book.fb2 test_book.md
-pandoc -o test_book.epub --metadata title=test_book_epub test_book.md
+pandoc -o test_book_fb2.fb2 test_book.md
+pandoc -o test_book_epub.epub --metadata title=test_book_epub test_book.md
 
 #pandoc -o test_book.mobi test_book.md  # generates html!?
 
-7z a test_book_md.zip test_book.md
-7z a test_book_txt.zip test_book.txt
+7z a test_book_md_zip.zip test_book.md
+7z a test_book_txt_zip.zip test_book.txt
