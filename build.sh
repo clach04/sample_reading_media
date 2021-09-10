@@ -1,3 +1,5 @@
+#!/bin/sh
+
 echo about to generate test media
 echo requires
 echo    pandoc - known to work with version 2.7.3
@@ -33,3 +35,4 @@ pandoc -o test_book_epub.epub --metadata title=test_book_epub test_book.md
 7z a test_book_txt_zip.zip test_book_txt.txt
 7z a test_book_html_zip.zip test_book_html.html
 7z a test_book_fb2_zip.zip test_book_fb2.fb2
+
