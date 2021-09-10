@@ -42,4 +42,8 @@ TODO
       * mobi
       * azw/azw3
       * pdf
-      * Comic metadata; zip comment or a ComicInfo.xml - see https://github.com/dickloraine/EmbedComicMetadata ,  https://github.com/comictagger/comictagger, and https://code.google.com/archive/p/comicbookinfo/ (wiki)
+      * Comic metadata; zip comment or a ComicInfo.xml - see
+          * https://github.com/dickloraine/EmbedComicMetadata
+          * https://github.com/comictagger/comictagger
+          * https://code.google.com/archive/p/comicbookinfo/ (wiki)
+          * https://wiki.mobileread.com/wiki/CBR_and_CBZ#Metadata
