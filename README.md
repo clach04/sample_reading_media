@@ -28,7 +28,10 @@ LGPL license, so feel free to use in/with your projects. If you modify them, sha
 ## Build setup
 
     # Assuming Debian based
-    sudo apt-get pandoc zip
+    sudo apt install pandoc zip
+    sudo apt install wget
+    sudo apt install p7zip-full
+    sudo apt install rar
 
 Issue build:
 
