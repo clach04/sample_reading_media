@@ -25,8 +25,16 @@ For Comic book sample, see https://www.contrapositivediary.com/?p=1197
 
 LGPL license, so feel free to use in/with your projects. If you modify them, share your changes.
 
+## Build setup
 
-TODO
+    # Assuming Debian based
+    sudo apt-get pandoc zip
+
+Issue build:
+
+    ./build.sh
+
+## TODO
 
   * add images (e.g. to html, embedded and linked, epub, new md file with images etc.)
   * hand crafted html/fb2 (e.g. include metadata)
