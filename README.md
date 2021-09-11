@@ -15,6 +15,8 @@ Test sample ebooks, etc. Formats:
   * test_book_txt_zip.zip
   * test_book_html_zip.zip
   * test_book_fb2_zip.zip
+  * test_book_rtf.rtf
+  * test_book_rtf_zip.zip
 
 All the above sample books are generated from [test_book.md](./test_book.md).
 
@@ -26,13 +28,13 @@ LGPL license, so feel free to use in/with your projects. If you modify them, sha
 
 TODO
 
-  * add images (e.g. to html, embedded and linked, epub, etc.)
+  * add images (e.g. to html, embedded and linked, epub, new md file with images etc.)
   * hand crafted html
-  * rtf
   * mobi
   * prc/pdb?
   * azw
   * azw3
+  * for text file formats, generate different line endings, pandoc `--eol=crlf|lf|native`
   * add comics
       * CBZ/CBR/CBT/CB7
       * epub with images only
