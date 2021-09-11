@@ -1,9 +1,8 @@
 #!/bin/sh
 
 echo about to generate test media
-echo requires
-echo    pandoc - known to work with version 2.7.3
-echo    7z
+echo REQUIRES pandoc - known to work with version 2.7.3
+echo REQUIRES zip/7z
 
 # TODO hand crafted html
 # TODO rtf
@@ -34,12 +33,22 @@ pandoc -o test_book_epub.epub --metadata title=test_book_epub test_book.md
 
 #pandoc -o test_book.mobi test_book.md  # generates html!?
 
-7z a test_book_md_zip.zip test_book_md.md
-7z a test_book_txt_zip.zip test_book_txt.txt
-7z a test_book_rtf_zip.zip test_book_rtf.rtf
-7z a test_book_html_zip.zip test_book_html.html
-7z a test_book_fb2_zip.zip test_book_fb2.fb2
+#which 7z || alias 7z=p7zi
+# 7z takes different arguments to p7zip
+myzip()
+{
+    echo myzip tool zip ${*}
+    #7z a ${*}
+    zip ${*}
+}
+
+
+myzip test_book_md_zip.zip test_book_md.md
+myzip test_book_txt_zip.zip test_book_txt.txt
+myzip test_book_rtf_zip.zip test_book_rtf.rtf
+myzip test_book_html_zip.zip test_book_html.html
+myzip test_book_fb2_zip.zip test_book_fb2.fb2
 
 # generate release
-7z a sample_reading_media.zip *.*
+myzip sample_reading_media.zip *.*
 
