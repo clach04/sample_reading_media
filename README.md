@@ -29,7 +29,7 @@ LGPL license, so feel free to use in/with your projects. If you modify them, sha
 TODO
 
   * add images (e.g. to html, embedded and linked, epub, new md file with images etc.)
-  * hand crafted html
+  * hand crafted html/fb2 (e.g. include metadata)
   * mobi
   * prc/pdb?
   * azw
