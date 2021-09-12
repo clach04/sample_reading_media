@@ -23,6 +23,8 @@ Test sample ebooks, etc. Formats:
 All the above sample books are generated from [test_book.md](./test_book.md).
 
   * source_test_book_fb2.fb2
+  * test_book_epub_more_detail.epub
+  * test_book_pdf_more_detail.pdf
 
 LGPL license, so feel free to use in/with your projects. If you modify them, share your changes.
 
@@ -66,11 +68,8 @@ Issue build:
       * CBR
       * epub with images only
   * metadata for formats that support it
-      * epub
-      * fb2
       * mobi
       * azw/azw3
-      * pdf
       * Comic metadata; zip comment or a ComicInfo.xml - see
           * https://github.com/dickloraine/EmbedComicMetadata
           * https://github.com/comictagger/comictagger

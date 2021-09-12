@@ -34,6 +34,8 @@ pandoc -o test_book_pdf.pdf --metadata title=test_book_pdf --pdf-engine wkhtmlto
 
 pandoc -o test_book_fb2.fb2 test_book.md
 pandoc -o test_book_epub.epub --metadata title=test_book_epub test_book.md
+pandoc -o test_book_epub_more_detail.epub source_test_book_fb2.fb2
+pandoc -o test_book_pdf_more_detail.pdf --pdf-engine wkhtmltopdf source_test_book_fb2.fb2
 
 #pandoc -o test_book.mobi test_book.md  # generates html!?
 
