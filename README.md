@@ -22,6 +22,8 @@ Test sample ebooks, etc. Formats:
 
 All the above sample books are generated from [test_book.md](./test_book.md).
 
+  * source_test_book_fb2.fb2
+
 LGPL license, so feel free to use in/with your projects. If you modify them, share your changes.
 
 Test sample comics, Formats:
@@ -54,7 +56,8 @@ Issue build:
 ## TODO
 
   * add images (e.g. to html, embedded and linked, epub, new md file with images etc.)
-  * hand crafted html/fb2 (e.g. include metadata)
+  * fb2 with title page/images
+  * hand crafted html (e.g. include metadata)
   * mobi
   * prc/pdb?
   * azw
