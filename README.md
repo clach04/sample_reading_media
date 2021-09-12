@@ -35,6 +35,7 @@ Test sample comics, Formats:
   * bobby_make_believe_sample.cb7
   * bobby_make_believe_sample.cbt
   * bobby_make_believe_sample.cbz
+  * bobby_make_believe_sample.cbr
   * bobby_make_believe_sample_dir.cb7
   * bobby_make_believe_sample_dir.cbt
   * bobby_make_believe_sample_dir.cbz
