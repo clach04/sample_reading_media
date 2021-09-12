@@ -1,5 +1,7 @@
 # sample_reading_media
 
+Pre-built files ready for download available from https://github.com/clach04/sample_reading_media/releases/
+
 Test sample ebooks, etc. Formats:
 
   * test_book.md
