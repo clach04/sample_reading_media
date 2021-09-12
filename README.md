@@ -23,6 +23,8 @@ Test sample ebooks, etc. Formats:
 All the above sample books are generated from [test_book.md](./test_book.md).
 
   * source_test_book_fb2.fb2
+  * source_test_book_fb2_zip.fbz
+  * source_test_book_fb2_dot_zip.fb2.zip
   * test_book_epub_more_detail.epub
   * test_book_pdf_more_detail.pdf
 

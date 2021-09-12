@@ -81,6 +81,8 @@ myzip test_book_txt_zip.zip test_book_txt.txt
 myzip test_book_rtf_zip.zip test_book_rtf.rtf
 myzip test_book_html_zip.zip test_book_html.html
 myzip test_book_fb2_zip.zip test_book_fb2.fb2
+myzip source_test_book_fb2_zip.fbz source_test_book_fb2.fb2
+myzip source_test_book_fb2_dot_zip.fb2.zip source_test_book_fb2.fb2
 
 # generate release
 myzip sample_reading_media.zip *.*
