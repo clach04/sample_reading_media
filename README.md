@@ -70,7 +70,7 @@ If wkhtmltopdf needs a display (not an issue under Microsoft Windows builds of P
 
 ## TODO
 
-  * add images (e.g. to html, embedded and linked, epub, new md file with images etc.)
+  * add images (e.g. to html, embedded and linked, epub, new md file with images etc.) SpaceX images supposed to be PD https://www.flickr.com/photos/spacex/ (see https://99designs.com/blog/resources/public-domain-image-resources/)
   * fb2 with title page/images
   * hand crafted html (e.g. include metadata)
   * mobi
