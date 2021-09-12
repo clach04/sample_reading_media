@@ -20,10 +20,21 @@ Test sample ebooks, etc. Formats:
 
 All the above sample books are generated from [test_book.md](./test_book.md).
 
-For Comic book sample, see https://www.contrapositivediary.com/?p=1197
+LGPL license, so feel free to use in/with your projects. If you modify them, share your changes.
+
+Test sample comics, Formats:
+
+  * bobby_make_believe_sample.cb7
+  * bobby_make_believe_sample.cbt
+  * bobby_make_believe_sample.cbz
+  * bobby_make_believe_sample_dir.cb7
+  * bobby_make_believe_sample_dir.cbt
+  * bobby_make_believe_sample_dir.cbz
+
+
+For Comic book also sample, see https://www.contrapositivediary.com/?p=1197
 (e.g. http://www.copperwood.com/pub/Elf%20Receiver%20Radio-Craft%20August%201936.cbz)
 
-LGPL license, so feel free to use in/with your projects. If you modify them, share your changes.
 Images in images/bobby_make_believe/ are in the Public Domain and are the first 4 four pages of "Bobby Make-Believe (1915)" from https://comicbookplus.com/?dlid=26481
 
 ## Build setup
@@ -48,7 +59,7 @@ Issue build:
   * azw3
   * for text file formats, generate different line endings, pandoc `--eol=crlf|lf|native`
   * add comics
-      * CBZ/CBR/CBT/CB7
+      * CBR
       * epub with images only
   * metadata for formats that support it
       * epub
@@ -61,3 +72,4 @@ Issue build:
           * https://github.com/comictagger/comictagger
           * https://code.google.com/archive/p/comicbookinfo/ (wiki)
           * https://wiki.mobileread.com/wiki/CBR_and_CBZ#Metadata
+
