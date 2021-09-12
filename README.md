@@ -78,7 +78,8 @@ If wkhtmltopdf needs a display (not an issue under Microsoft Windows builds of P
   * azw
   * azw3
   * add comics
-      * CBR
+      * with PNG images
+      * 24-bit, 8-bit grayscale, indexed (e.g. 4 colors), and a transparency test
       * epub with images only
   * metadata for formats that support it
       * mobi
