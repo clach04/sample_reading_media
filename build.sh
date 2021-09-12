@@ -86,5 +86,5 @@ myzip source_test_book_fb2_zip.fbz source_test_book_fb2.fb2
 myzip source_test_book_fb2_dot_zip.fb2.zip source_test_book_fb2.fb2
 
 # generate release
-myzip sample_reading_media.zip *.*
+#myzip sample_reading_media.zip *.*
 
