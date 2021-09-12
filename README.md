@@ -50,13 +50,21 @@ Images in images/bobby_make_believe/ are in the Public Domain and are the first 
 
     # Assuming Debian based
     sudo apt install pandoc zip
-    sudo apt install wget
-    sudo apt install p7zip-full
-    sudo apt install rar
+    sudo apt install wkhtmltopdf  # for pdf support
+    sudo apt install xvfb  # *might* be needed for wkhtmltopdf
+    sudo apt install wget  # for extra cbz comic
+    sudo apt install p7zip-full  # for cb7 comic
+    sudo apt install rar  # for cbr comic
 
 Issue build:
 
     ./build.sh
+
+If wkhtmltopdf needs a display (not an issue under Microsoft Windows builds of Pandoc) can either try and use a diffrent PDF engine for pandoc or use Xvfb, for example:
+
+    Xvfb :1 &
+    env  DISPLAY=:1 ./build.sh
+    # killall Xvfb
 
 ## TODO
 

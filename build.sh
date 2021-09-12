@@ -5,14 +5,10 @@ echo REQUIRES pandoc - known to work with version 2.7.3
 echo REQUIRES zip/7z
 
 # TODO hand crafted html
-# TODO rtf
 # TODO mobi
 # TODO prc/pdb?
 # TODO azw
 # TODO azw3
-# TODO CBZ/CBR/CBT/CB7
-# TODO metadata
-# compressed files
 
 cp test_book.md test_book_md.md
 cp test_book.md test_book_txt.txt
@@ -86,5 +82,5 @@ myzip source_test_book_fb2_zip.fbz source_test_book_fb2.fb2
 myzip source_test_book_fb2_dot_zip.fb2.zip source_test_book_fb2.fb2
 
 # generate release
-#myzip sample_reading_media.zip *.*
+#myzip sample_reading_media.zip *
 
