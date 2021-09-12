@@ -17,6 +17,10 @@ echo REQUIRES zip/7z
 cp test_book.md test_book_md.md
 cp test_book.md test_book_txt.txt
 
+pandoc -o test_book_txt_lf_unix.txt --eol=lf test_book_md.md
+pandoc -o test_book_txt_crlf_win.txt --eol=crlf test_book_md.md
+
+
 echo FIXME add -s for all textual formats e.g. html, fb2....
 echo TODO add auto TOC generation when possible
 pandoc -o test_book_html.html test_book.md

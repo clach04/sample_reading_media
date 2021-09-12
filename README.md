@@ -5,6 +5,8 @@ Test sample ebooks, etc. Formats:
   * test_book.md
   * test_book_md.md
   * test_book_txt.txt
+  * test_book_txt_crlf_win.txt
+  * test_book_txt_lf_unix.txt
   * test_book_html.html
   * test_book_odt.odt
   * test_book_docx.docx
@@ -57,7 +59,6 @@ Issue build:
   * prc/pdb?
   * azw
   * azw3
-  * for text file formats, generate different line endings, pandoc `--eol=crlf|lf|native`
   * add comics
       * CBR
       * epub with images only
