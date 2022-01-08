@@ -90,3 +90,5 @@ If wkhtmltopdf needs a display (not an issue under Microsoft Windows builds of P
           * https://code.google.com/archive/p/comicbookinfo/ (wiki)
           * https://wiki.mobileread.com/wiki/CBR_and_CBZ#Metadata
 
+Also see https://github.com/koreader/test-data
+
