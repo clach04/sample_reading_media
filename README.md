@@ -1,6 +1,8 @@
-# sample_reading_media
+# sample reading media
 
 Pre-built files ready for download available from https://github.com/clach04/sample_reading_media/releases/
+
+Also see https://github.com/joshuatz/video-test-file-links
 
 Test sample ebooks, etc. Formats:
 
