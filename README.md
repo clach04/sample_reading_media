@@ -2,7 +2,10 @@
 
 Pre-built files ready for download available from https://github.com/clach04/sample_reading_media/releases/
 
-Also see https://github.com/joshuatz/video-test-file-links
+Other media samples, see:
+
+  * https://github.com/joshuatz/video-test-file-links
+  * https://github.com/recurser/exif-orientation-examples
 
 Test sample ebooks, etc. Formats:
 
