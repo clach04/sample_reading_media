@@ -53,6 +53,13 @@ For Comic book also sample, see https://www.contrapositivediary.com/?p=1197
 
 Images in images/bobby_make_believe/ are in the Public Domain and are the first 4 four pages of "Bobby Make-Believe (1915)" from https://comicbookplus.com/?dlid=26481
 
+## Applications to read sample media
+
+See:
+
+  * https://github.com/clach04/dir2opds/wiki
+  * https://github.com/clach04/dir2opds/wiki/Tested-Clients
+
 ## Build setup
 
     # Assuming Debian based
