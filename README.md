@@ -6,6 +6,7 @@ Other media samples, see:
 
   * https://github.com/joshuatz/video-test-file-links
   * https://github.com/recurser/exif-orientation-examples
+  * https://sourceforge.net/p/exiftool/code/ci/master/tree/t/images/
   * https://digitalcomicmuseum.com/index.php?cid=74
 
 Test sample ebooks, etc. Formats:
