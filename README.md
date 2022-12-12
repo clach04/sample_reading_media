@@ -95,6 +95,7 @@ If wkhtmltopdf needs a display (not an issue under Microsoft Windows builds of P
       * with PNG images
       * 24-bit, 8-bit grayscale, indexed (e.g. 4 colors), and a transparency test
       * epub with images only
+      * No compression - https://github.com/clach04/sample_reading_media/blob/e1e5ae7beeb832d929e875daf87494af2cf8a942/build.sh#L49
   * metadata for formats that support it
       * mobi
       * azw/azw3
