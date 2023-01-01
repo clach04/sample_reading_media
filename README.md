@@ -105,6 +105,7 @@ If wkhtmltopdf needs a display (not an issue under Microsoft Windows builds of P
           * https://github.com/comictagger/comictagger
           * https://code.google.com/archive/p/comicbookinfo/ (wiki)
           * https://wiki.mobileread.com/wiki/CBR_and_CBZ#Metadata
+  * consider renaming existing files - depending on discoveries in https://github.com/koreader/koreader/issues/9986
 
 Also see https://github.com/koreader/test-data
 
