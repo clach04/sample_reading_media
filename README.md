@@ -4,10 +4,11 @@ Pre-built files ready for download available from https://github.com/clach04/sam
 
 Other media samples, see:
 
-  * https://github.com/joshuatz/video-test-file-links
-  * https://github.com/recurser/exif-orientation-examples
-  * https://sourceforge.net/p/exiftool/code/ci/master/tree/t/images/
-  * https://digitalcomicmuseum.com/index.php?cid=74
+  * ebook (epub, mobi and azw3 formats) https://github.com/regueiro/spring-reference-ebook
+  * Video https://github.com/joshuatz/video-test-file-links
+  * Images https://github.com/recurser/exif-orientation-examples
+  * Images https://sourceforge.net/p/exiftool/code/ci/master/tree/t/images/
+  * Comics (images) https://digitalcomicmuseum.com/index.php?cid=74
 
 Test sample ebooks, etc. Formats:
 
