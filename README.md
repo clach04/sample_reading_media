@@ -13,6 +13,8 @@
 
 ## Overview
 
+Super small, sample ebooks that are representative samples of book formats (and content).
+
 Pre-built files ready for download available from https://github.com/clach04/sample_reading_media/releases/
 
 Test sample ebooks, etc. Formats:
@@ -59,7 +61,7 @@ Images in comics typically in root directory of archive (see `bobby_make_believe
 
 For other Comic book samples, see [Comics](#comics).
 
-[bobby_make_believe images](images/bobby_make_believe) are in the Public Domain and are the first 4 four pages of "Bobby Make-Believe (1915)" from https://comicbookplus.com/?dlid=26481
+[bobby_make_believe images](images/bobby_make_believe) are in the Public Domain and are the first 4 four pages of "Bobby Make-Believe (1915)" from https://comicbookplus.com/?dlid=26481 - 4 pages to reduce file size whilst being realistic content.
 
 ## Applications to read sample media
 
@@ -117,6 +119,7 @@ If wkhtmltopdf needs a display (not an issue under Microsoft Windows builds of P
   * add images (e.g. to html, embedded and linked, epub, new md file with images etc.) SpaceX images supposed to be PD https://www.flickr.com/photos/spacex/ (see https://99designs.com/blog/resources/public-domain-image-resources/)
   * fb2 with title page/images
   * TOC for epub `pandoc -o OUTPUTNAME.epub INPUTNAME.md --toc --toc-depth=2 --epub-cover-image=COVERIMAGE.png`
+  * regular epub (done), stored (no-compression), maximum compression
   * hand crafted html (e.g. include metadata)
   * mobi
   * prc/pdb?
