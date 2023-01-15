@@ -55,6 +55,7 @@ Test sample comics, Formats:
   * bobby_make_believe_sample_dir.cbt
   * bobby_make_believe_sample_dir.cbz
 
+Images in comics typically in root directory of archive (see `bobby_make_believe_sample`). `bobby_make_believe_sample_dir` sample have images in a sub-directory.
 
 For other Comic book samples, see [Comics](#comics).
 
