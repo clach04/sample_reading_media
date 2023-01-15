@@ -56,8 +56,7 @@ Test sample comics, Formats:
   * bobby_make_believe_sample_dir.cbz
 
 
-For Comic book also sample, see https://www.contrapositivediary.com/?p=1197
-(e.g. http://www.copperwood.com/pub/Elf%20Receiver%20Radio-Craft%20August%201936.cbz)
+For other Comic book samples, see [Comics](#comics).
 
 [bobby_make_believe images](images/bobby_make_believe) are in the Public Domain and are the first 4 four pages of "Bobby Make-Believe (1915)" from https://comicbookplus.com/?dlid=26481
 
@@ -97,6 +96,8 @@ If wkhtmltopdf needs a display (not an issue under Microsoft Windows builds of P
 ### Comics
 
   * Comics (images) https://digitalcomicmuseum.com/index.php?cid=74
+  * https://www.contrapositivediary.com/?p=1197
+      * http://www.copperwood.com/pub/Elf%20Receiver%20Radio-Craft%20August%201936.cbz
 
 ### Images
 
