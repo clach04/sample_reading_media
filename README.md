@@ -95,6 +95,7 @@ If wkhtmltopdf needs a display (not an issue under Microsoft Windows builds of P
 
 ### Comics
 
+  * [Bobby Make-Believe (1915)](https://comicbookplus.com/?dlid=26481)
   * Comics (images) https://digitalcomicmuseum.com/index.php?cid=74
   * https://www.contrapositivediary.com/?p=1197
       * http://www.copperwood.com/pub/Elf%20Receiver%20Radio-Craft%20August%201936.cbz
