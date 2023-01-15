@@ -1,14 +1,8 @@
 # sample reading media
 
+## Overview
+
 Pre-built files ready for download available from https://github.com/clach04/sample_reading_media/releases/
-
-Other media samples, see:
-
-  * ebook (epub, mobi and azw3 formats) https://github.com/regueiro/spring-reference-ebook
-  * Video https://github.com/joshuatz/video-test-file-links
-  * Images https://github.com/recurser/exif-orientation-examples
-  * Images https://sourceforge.net/p/exiftool/code/ci/master/tree/t/images/
-  * Comics (images) https://digitalcomicmuseum.com/index.php?cid=74
 
 Test sample ebooks, etc. Formats:
 
@@ -82,6 +76,26 @@ If wkhtmltopdf needs a display (not an issue under Microsoft Windows builds of P
     Xvfb :1 &
     env  DISPLAY=:1 ./build.sh
     # killall Xvfb
+
+## Other media samples
+
+### ebooks
+
+  * ebook (epub, mobi and azw3 formats) https://github.com/regueiro/spring-reference-ebook
+
+### Comics
+
+  * Comics (images) https://digitalcomicmuseum.com/index.php?cid=74
+
+### Images
+
+  * Images https://github.com/recurser/exif-orientation-examples
+  * Images https://sourceforge.net/p/exiftool/code/ci/master/tree/t/images/
+
+### Videos
+
+  * Video https://github.com/joshuatz/video-test-file-links
+
 
 ## TODO
 
