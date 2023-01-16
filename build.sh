@@ -6,11 +6,13 @@ echo about to generate test media
 echo 'REQUIRES pandoc - known to work with version 2.7.3 (issues with 1.19.2.4)'
 echo pandoc check...
 pandoc --version
-echo REQUIRES zip/7z
+echo REQUIRES zip
 echo REQUIRES tar
-echo REQUIRES TODO rar
+echo REQUIRES 7z
+echo REQUIRES rar
 
 # TODO hand crafted html
+# TODO hand crafted html with embedded images (of different formats; png, gif, jpg, svg, webp)
 # TODO mobi
 # TODO prc/pdb?
 # TODO azw
@@ -83,6 +85,18 @@ my7z_uncompressed()
     7z a -mx0 ${*}
 }
 
+myrar()
+{
+    # m<0..5>       Set compression level (0-store...3-default...5-maximal)
+    rar a ${*}
+}
+
+
+myrar_uncompressed()
+{
+    rar a -m0 ${*}
+}
+
 
 create_comics()
 {
@@ -93,7 +107,8 @@ create_comics()
     myzip_uncompressed ${base_comic_name}_uncompressed.cbz ${*}
     my7z_uncompressed ${base_comic_name}_uncompressed.cb7 ${*}
     tar -cvf ${base_comic_name}.cbt ${*}
-    # TODO RAR with and without compression
+    myrar ${base_comic_name}.cbr ${*}
+    myrar_uncompressed ${base_comic_name}_uncompressed.cbr ${*}
 }
 
 myzip bobby_make_believe_sample_dir.cbz images/bobby_make_believe/Bobby-Make-Believe_1915__0.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__1.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__2.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__3.jpg
