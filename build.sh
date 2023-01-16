@@ -1,5 +1,7 @@
 #!/bin/sh
 
+#set -e  # stop on first error
+
 echo about to generate test media
 echo 'REQUIRES pandoc - known to work with version 2.7.3 (issues with 1.19.2.4)'
 echo pandoc check...
@@ -90,7 +92,7 @@ create_comics()
     my7z ${base_comic_name}.cb7 ${*}
     myzip_uncompressed ${base_comic_name}_uncompressed.cbz ${*}
     my7z_uncompressed ${base_comic_name}_uncompressed.cb7 ${*}
-    tar -cvf ${base_comic_name}_dir.cbt ${*}
+    tar -cvf ${base_comic_name}.cbt ${*}
     # TODO RAR with and without compression
 }
 
