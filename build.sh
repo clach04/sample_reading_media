@@ -3,6 +3,8 @@
 echo about to generate test media
 echo REQUIRES pandoc - known to work with version 2.7.3
 echo REQUIRES zip/7z
+echo REQUIRES tar
+echo REQUIRES TODO rar
 
 # TODO hand crafted html
 # TODO mobi
@@ -46,32 +48,59 @@ fi
 
 
 
-# TODO no compression
+# TODO rar
 #which 7z || alias 7z=p7zi
-# 7z takes different arguments to p7zip
 myzip()
 {
     echo myzip tool zip ${*}
+    # NOTE 7z defaults to creating 7z file if filename does not in in .ZIP
+    # this function MUST create zip/pkzip files - if using 7z binary use .zip and then rename
     #7z a ${*}
     zip ${*}
 }
 
+myzip_uncompressed()
+{
+    echo myzip_uncompressed tool zip ${*}
+    # do not use 7z if file name does not end in .ZIP
+    # this function MUST create zip/pkzip files - is using 7z use .zip and then rename
+    zip -0 ${*}
+}
+
 my7z()
 {
+    # 7z takes different arguments to p7zip
     7z a ${*}
 }
 
+my7z_uncompressed()
+{
+    # 7z takes different arguments to p7zip
+    7z a -mx0 ${*}
+}
+
+
+# TODO RAR with and without compression
 
 myzip bobby_make_believe_sample_dir.cbz images/bobby_make_believe/Bobby-Make-Believe_1915__0.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__1.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__2.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__3.jpg
 my7z bobby_make_believe_sample_dir.cb7 images/bobby_make_believe/Bobby-Make-Believe_1915__0.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__1.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__2.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__3.jpg
+myzip_uncompressed bobby_make_believe_sample_dir_uncompressed.cbz images/bobby_make_believe/Bobby-Make-Believe_1915__0.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__1.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__2.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__3.jpg
+my7z_uncompressed bobby_make_believe_sample_dir_uncompressed.cb7 images/bobby_make_believe/Bobby-Make-Believe_1915__0.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__1.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__2.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__3.jpg
 tar -cvf bobby_make_believe_sample_dir.cbt images/bobby_make_believe/Bobby-Make-Believe_1915__0.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__1.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__2.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__3.jpg
 
 cd images/bobby_make_believe/
 myzip ../../bobby_make_believe_sample.cbz Bobby-Make-Believe_1915__0.jpg Bobby-Make-Believe_1915__1.jpg Bobby-Make-Believe_1915__2.jpg Bobby-Make-Believe_1915__3.jpg
 my7z ../../bobby_make_believe_sample.cb7 Bobby-Make-Believe_1915__0.jpg Bobby-Make-Believe_1915__1.jpg Bobby-Make-Believe_1915__2.jpg Bobby-Make-Believe_1915__3.jpg
+myzip_uncompressed ../../bobby_make_believe_sample_uncompressed.cbz Bobby-Make-Believe_1915__0.jpg Bobby-Make-Believe_1915__1.jpg Bobby-Make-Believe_1915__2.jpg Bobby-Make-Believe_1915__3.jpg
+my7z_uncompressed ../../bobby_make_believe_sample_uncompressed.cb7 Bobby-Make-Believe_1915__0.jpg Bobby-Make-Believe_1915__1.jpg Bobby-Make-Believe_1915__2.jpg Bobby-Make-Believe_1915__3.jpg
 tar -cvf ../../bobby_make_believe_sample.cbt Bobby-Make-Believe_1915__0.jpg Bobby-Make-Believe_1915__1.jpg Bobby-Make-Believe_1915__2.jpg Bobby-Make-Believe_1915__3.jpg
 rar a -m0 ..\..\bobby_make_believe_sample.cbr Bobby-Make-Believe_1915__0.jpg Bobby-Make-Believe_1915__1.jpg Bobby-Make-Believe_1915__2.jpg Bobby-Make-Believe_1915__3.jpg
 cd ../..
+
+# TODO rename to make easier for using with koreader - see https://github.com/koreader/koreader/issues/9986
+# ensure zip is in the file name for tools that hide file extensions
+# IDEA - test_book_md_zip.zip  -- test_book_md_zip.md.zip
+# IDEA - test_book_txt_zip.zip  -- test_book_txt_zip.txt.zip
 
 myzip test_book_md_zip.zip test_book_md.md
 myzip test_book_txt_zip.zip test_book_txt.txt
