@@ -80,13 +80,25 @@ my7z_uncompressed()
 }
 
 
-# TODO RAR with and without compression
+create_comics()
+{
+    base_comic_name=$1
+    shift
+    myzip ${base_comic_name}.cbz ${*}
+    my7z ${base_comic_name}.cb7 ${*}
+    myzip_uncompressed ${base_comic_name}_uncompressed.cbz ${*}
+    my7z_uncompressed ${base_comic_name}_uncompressed.cb7 ${*}
+    tar -cvf ${base_comic_name}_dir.cbt ${*}
+    # TODO RAR with and without compression
+}
 
 myzip bobby_make_believe_sample_dir.cbz images/bobby_make_believe/Bobby-Make-Believe_1915__0.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__1.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__2.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__3.jpg
 my7z bobby_make_believe_sample_dir.cb7 images/bobby_make_believe/Bobby-Make-Believe_1915__0.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__1.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__2.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__3.jpg
 myzip_uncompressed bobby_make_believe_sample_dir_uncompressed.cbz images/bobby_make_believe/Bobby-Make-Believe_1915__0.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__1.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__2.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__3.jpg
 my7z_uncompressed bobby_make_believe_sample_dir_uncompressed.cb7 images/bobby_make_believe/Bobby-Make-Believe_1915__0.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__1.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__2.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__3.jpg
 tar -cvf bobby_make_believe_sample_dir.cbt images/bobby_make_believe/Bobby-Make-Believe_1915__0.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__1.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__2.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__3.jpg
+
+create_comics mono_numbered_png_dir     images/mono_numbered_png/01.png images/mono_numbered_png/02.png images/mono_numbered_png/03.png images/mono_numbered_png/04.png images/mono_numbered_png/05.png images/mono_numbered_png/06.png images/mono_numbered_png/07.png images/mono_numbered_png/08.png images/mono_numbered_png/09.png images/mono_numbered_png/10.png
 
 cd images/bobby_make_believe/
 myzip ../../bobby_make_believe_sample.cbz Bobby-Make-Believe_1915__0.jpg Bobby-Make-Believe_1915__1.jpg Bobby-Make-Believe_1915__2.jpg Bobby-Make-Believe_1915__3.jpg
@@ -95,6 +107,10 @@ myzip_uncompressed ../../bobby_make_believe_sample_uncompressed.cbz Bobby-Make-B
 my7z_uncompressed ../../bobby_make_believe_sample_uncompressed.cb7 Bobby-Make-Believe_1915__0.jpg Bobby-Make-Believe_1915__1.jpg Bobby-Make-Believe_1915__2.jpg Bobby-Make-Believe_1915__3.jpg
 tar -cvf ../../bobby_make_believe_sample.cbt Bobby-Make-Believe_1915__0.jpg Bobby-Make-Believe_1915__1.jpg Bobby-Make-Believe_1915__2.jpg Bobby-Make-Believe_1915__3.jpg
 rar a -m0 ..\..\bobby_make_believe_sample.cbr Bobby-Make-Believe_1915__0.jpg Bobby-Make-Believe_1915__1.jpg Bobby-Make-Believe_1915__2.jpg Bobby-Make-Believe_1915__3.jpg
+cd ../..
+
+cd images/mono_numbered_png/
+create_comics ../../mono_numbered_png    01.png 02.png 03.png 04.png 05.png 06.png 07.png 08.png 09.png 10.png
 cd ../..
 
 # TODO rename to make easier for using with koreader - see https://github.com/koreader/koreader/issues/9986
