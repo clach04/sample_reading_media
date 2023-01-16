@@ -1,7 +1,9 @@
 #!/bin/sh
 
 echo about to generate test media
-echo REQUIRES pandoc - known to work with version 2.7.3
+echo 'REQUIRES pandoc - known to work with version 2.7.3 (issues with 1.19.2.4)'
+echo pandoc check...
+pandoc --version
 echo REQUIRES zip/7z
 echo REQUIRES tar
 echo REQUIRES TODO rar
