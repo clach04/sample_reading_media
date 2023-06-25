@@ -15,7 +15,7 @@ echo 'REQUIRES pandoc - known to work with version 2.7.3 (issues with 1.19.2.4)'
 # pandoc 2.5
 #   Couldn't parse FB2 file: link without required href.
 
-echo pandoc check...
+echo pandoc  check...
 pandoc --version
 echo REQUIRES zip
 echo REQUIRES tar
@@ -36,34 +36,34 @@ cp test_book.md test_book_txt.txt
 if [ -z "${SKIP_PANDOC_EOF}" ]
 then
     # skip for VERY old versions of pandoc (e.g. 1.19.2.4)
-    pandoc -o test_book_txt_lf_unix.txt --eol=lf test_book_md.md
-    pandoc -o test_book_txt_crlf_win.txt --eol=crlf test_book_md.md
+    pandoc -s -o test_book_txt_lf_unix.txt --eol=lf test_book_md.md
+    pandoc -s -o test_book_txt_crlf_win.txt --eol=crlf test_book_md.md
 fi
 
 echo HTML format
-echo FIXME add -s for all textual formats e.g. html, fb2....
+# add -s for all textual formats e.g. html, fb2.... BUT especially RTF (required for that)
 echo TODO add auto TOC generation when possible
-pandoc -o test_book_html.html test_book.md
+pandoc -s -o test_book_html.html test_book.md
 
 echo Microsoft doc related
 #pandoc -o test_book.rtf test_book.md   # does not generate correct RTF (unlike other formats with Pandoc), missing head/template - see https://github.com/jgm/pandoc/issues/857 and  https://github.com/jgm/pandoc/issues/2140
-pandoc -o test_book_rtf.rtf -s test_book.md
-pandoc -o test_book_odt.odt test_book.md
-pandoc -o test_book_docx.docx test_book.md
+pandoc -s -o test_book_rtf.rtf test_book.md
+pandoc -s -o test_book_odt.odt test_book.md
+pandoc -s -o test_book_docx.docx test_book.md
 
 if [ -z "${SKIP_PDF}" ]
 then
     echo PDF format
-    pandoc -o test_book_pdf.pdf --metadata title=test_book_pdf --pdf-engine wkhtmltopdf test_book.md
-    pandoc -o test_book_pdf_more_detail.pdf --pdf-engine wkhtmltopdf source_test_book_fb2.fb2
+    pandoc -s -o test_book_pdf.pdf --metadata title=test_book_pdf --pdf-engine wkhtmltopdf test_book.md
+    pandoc -s -o test_book_pdf_more_detail.pdf --pdf-engine wkhtmltopdf source_test_book_fb2.fb2
 fi
 
 echo ebook formats
-pandoc -o test_book_fb2.fb2 test_book.md
-pandoc -o test_book_epub.epub --metadata title=test_book_epub test_book.md
-pandoc -o test_book_epub_more_detail.epub source_test_book_fb2.fb2
+pandoc -s -o test_book_fb2.fb2 test_book.md
+pandoc -s -o test_book_epub.epub --metadata title=test_book_epub test_book.md
+pandoc -s -o test_book_epub_more_detail.epub source_test_book_fb2.fb2
 
-#pandoc -o test_book.mobi test_book.md  # generates html!?
+#pandoc -s -o test_book.mobi test_book.md  # generates html!?
 
 
 # TODO rar
