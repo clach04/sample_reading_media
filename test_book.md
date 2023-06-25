@@ -82,3 +82,30 @@ Ordered/numbered lists:
 External link to this [ebook project page](https://github.com/clach04/sample_reading_media).
 
 Internal link to [Copyright section](#copyright).
+
+Non-ascii characters
+--------------------
+
+### Latin15
+
+Some latin15 characters:
+
+British pound currency £
+
+Euro currency symbol €
+
+München is a city in Germany.
+
+### CJK
+
+Inside the Basic Multilingual Plane (BMP).
+
+10 strokes Kanji for house, 家
+
+### Emoji
+
+Outside the Basic Multilingual Plane (BMP).
+
+Slightly Smiling Face 🙂
+
+Thumbs Up 👍

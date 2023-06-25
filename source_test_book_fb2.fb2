@@ -162,5 +162,40 @@
         </section>
     </section>
 
+    <section id="non-ascii-characters">
+        <title>
+            <p>Non-ascii characters</p>
+        </title>
+
+        <section id="latin15">
+            <title>
+                <p>Latin15</p>
+            </title>
+            <p>Some latin15 characters:</p>
+            <p>British pound currency £</p>
+            <p>Euro currency symbol €</p>
+            <p>München is a city in Germany.</p>
+        </section>
+
+        <section id="cjk">
+            <title>
+            <p>CJK</p>
+            </title>
+            <p>Inside the Basic Multilingual Plane (BMP).</p>
+            <p>10 strokes Kanji for house, 家</p>
+        </section>
+
+        <section id="emoji">
+            <title>
+                <p>Emoji</p>
+            </title>
+            <p>
+            Outside the Basic Multilingual Plane (BMP).</p>
+            <p>Slightly Smiling Face 🙂</p>
+            <p>Thumbs Up 👍</p>
+        </section>
+    </section>
+
+
 </body>
 </FictionBook>
