@@ -87,6 +87,19 @@ myrar_uncompressed()
     rar a -m0 ${*}
 }
 
+# TODO consider renaming to make easier for using with koreader - see https://github.com/koreader/koreader/issues/9986 and https://github.com/koreader/koreader/wiki/ZIP
+# ensure zip is in the file name for tools that hide file extensions
+# IDEA - test_book_md_zip.zip  -- test_book_md_zip.md.zip
+# IDEA - test_book_txt_zip.zip  -- test_book_txt_zip.txt.zip
+
+myzip test_book_md_zip.zip test_book_md.md
+myzip test_book_txt_zip.zip test_book_txt.txt
+myzip test_book_rtf_zip.zip test_book_rtf.rtf
+myzip test_book_html_zip.zip test_book_html.html
+myzip test_book_fb2_zip.zip test_book_fb2.fb2
+myzip source_test_book_fb2_zip.fbz source_test_book_fb2.fb2
+myzip source_test_book_fb2_dot_zip.fb2.zip source_test_book_fb2.fb2
+
 
 # Comics
 #if [ ! -f "Elf Receiver Radio-Craft August 1936.cbz" ]
@@ -132,18 +145,6 @@ cd images/mono_numbered_png/
 create_comics ../../mono_numbered_png    01.png 02.png 03.png 04.png 05.png 06.png 07.png 08.png 09.png 10.png
 cd ../..
 
-# TODO consider renaming to make easier for using with koreader - see https://github.com/koreader/koreader/issues/9986 and https://github.com/koreader/koreader/wiki/ZIP
-# ensure zip is in the file name for tools that hide file extensions
-# IDEA - test_book_md_zip.zip  -- test_book_md_zip.md.zip
-# IDEA - test_book_txt_zip.zip  -- test_book_txt_zip.txt.zip
-
-myzip test_book_md_zip.zip test_book_md.md
-myzip test_book_txt_zip.zip test_book_txt.txt
-myzip test_book_rtf_zip.zip test_book_rtf.rtf
-myzip test_book_html_zip.zip test_book_html.html
-myzip test_book_fb2_zip.zip test_book_fb2.fb2
-myzip source_test_book_fb2_zip.fbz source_test_book_fb2.fb2
-myzip source_test_book_fb2_dot_zip.fb2.zip source_test_book_fb2.fb2
 
 # generate release
 #myzip sample_reading_media.zip *
