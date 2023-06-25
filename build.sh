@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#set -e  # stop on first error
+set -e  # stop on first error
 
 echo about to generate test media
 echo 'REQUIRES pandoc - known to work with version 2.7.3 (issues with 1.19.2.4)'
@@ -49,10 +49,16 @@ pandoc -o test_book_pdf_more_detail.pdf --pdf-engine wkhtmltopdf source_test_boo
 myzip()
 {
     echo myzip tool zip ${*}
-    # NOTE 7z defaults to creating 7z file if filename does not in in .ZIP
+    #zip ${*}
+    #return
+
+    # NOTE 7z defaults to creating 7z file if filename does not end in .ZIP
     # this function MUST create zip/pkzip files - if using 7z binary use .zip and then rename
     #7z a ${*}
-    zip ${*}
+    archive_name=${1}
+    shift
+    7z a ${archive_name}.zip ${*}
+    mv ${archive_name}.zip ${archive_name}
 }
 
 myzip_uncompressed()
