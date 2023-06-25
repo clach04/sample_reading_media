@@ -10,6 +10,7 @@ fi
 
 echo about to generate test media
 echo 'REQUIRES pandoc - known to work with version 2.7.3 (issues with 1.19.2.4)'
+# pandoc: unrecognized option `--eol=lf'
 echo pandoc check...
 pandoc --version
 echo REQUIRES zip
@@ -28,8 +29,12 @@ echo Text formats
 cp test_book.md test_book_md.md
 cp test_book.md test_book_txt.txt
 
-pandoc -o test_book_txt_lf_unix.txt --eol=lf test_book_md.md
-pandoc -o test_book_txt_crlf_win.txt --eol=crlf test_book_md.md
+if [ -z "${SKIP_PANDOC_EOF}" ]
+then
+    # skip for VERY old versions of pandoc (e.g. 1.19.2.4)
+    pandoc -o test_book_txt_lf_unix.txt --eol=lf test_book_md.md
+    pandoc -o test_book_txt_crlf_win.txt --eol=crlf test_book_md.md
+fi
 
 echo HTML format
 echo FIXME add -s for all textual formats e.g. html, fb2....
