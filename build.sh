@@ -42,9 +42,12 @@ pandoc -o test_book_rtf.rtf -s test_book.md
 pandoc -o test_book_odt.odt test_book.md
 pandoc -o test_book_docx.docx test_book.md
 
-echo PDF format
-pandoc -o test_book_pdf.pdf --metadata title=test_book_pdf --pdf-engine wkhtmltopdf test_book.md
-pandoc -o test_book_pdf_more_detail.pdf --pdf-engine wkhtmltopdf source_test_book_fb2.fb2
+if [ -z "${SKIP_PDF}" ]
+then
+    echo PDF format
+    pandoc -o test_book_pdf.pdf --metadata title=test_book_pdf --pdf-engine wkhtmltopdf test_book.md
+    pandoc -o test_book_pdf_more_detail.pdf --pdf-engine wkhtmltopdf source_test_book_fb2.fb2
+fi
 
 echo ebook formats
 pandoc -o test_book_fb2.fb2 test_book.md
