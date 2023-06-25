@@ -10,7 +10,11 @@ fi
 
 echo about to generate test media
 echo 'REQUIRES pandoc - known to work with version 2.7.3 (issues with 1.19.2.4)'
-# pandoc: unrecognized option `--eol=lf'
+# pandoc 1.19.2.4
+#   pandoc: unrecognized option `--eol=lf'
+# pandoc 2.5
+#   Couldn't parse FB2 file: link without required href.
+
 echo pandoc check...
 pandoc --version
 echo REQUIRES zip
