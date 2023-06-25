@@ -102,15 +102,6 @@ myzip source_test_book_fb2_dot_zip.fb2.zip source_test_book_fb2.fb2
 
 
 # Comics
-#if [ ! -f "Elf Receiver Radio-Craft August 1936.cbz" ]
-if [ ! -f Elf_Receiver_Radio-Craft_August_1936.cbz ]
-then
-    # From https://www.contrapositivediary.com/?p=1197
-    wget "http://www.copperwood.com/pub/Elf%20Receiver%20Radio-Craft%20August%201936.cbz"  # download with original name
-    mv "Elf Receiver Radio-Craft August 1936.cbz" Elf_Receiver_Radio-Craft_August_1936.cbz
-fi
-
-
 create_comics()
 {
     base_comic_name=$1
@@ -123,6 +114,16 @@ create_comics()
     myrar ${base_comic_name}.cbr ${*}
     myrar_uncompressed ${base_comic_name}_uncompressed.cbr ${*}
 }
+
+#if [ ! -f "Elf Receiver Radio-Craft August 1936.cbz" ]
+if [ ! -f Elf_Receiver_Radio-Craft_August_1936.cbz ]
+then
+    # From https://www.contrapositivediary.com/?p=1197
+    wget "http://www.copperwood.com/pub/Elf%20Receiver%20Radio-Craft%20August%201936.cbz"  # download with original name
+    mv "Elf Receiver Radio-Craft August 1936.cbz" Elf_Receiver_Radio-Craft_August_1936.cbz
+fi
+
+
 
 # FIXME use create_comics instead
 myzip bobby_make_believe_sample_dir.cbz images/bobby_make_believe/Bobby-Make-Believe_1915__0.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__1.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__2.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__3.jpg
