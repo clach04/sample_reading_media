@@ -14,7 +14,7 @@ echo REQUIRES rar
 # TODO hand crafted html
 # TODO hand crafted html with embedded images (of different formats; png, gif, jpg, svg, webp)
 # TODO mobi
-# TODO prc/pdb?
+# TODO prc/pdb? https://github.com/clach04/pyrite-publisher
 # TODO azw
 # TODO azw3
 
@@ -29,7 +29,7 @@ echo FIXME add -s for all textual formats e.g. html, fb2....
 echo TODO add auto TOC generation when possible
 pandoc -o test_book_html.html test_book.md
 
-#pandoc -o test_book.rtf test_book.md   # does not generate correct rtf, missing head/template- https://github.com/jgm/pandoc/issues/857 TODO cross link to https://github.com/jgm/pandoc/issues/2140
+#pandoc -o test_book.rtf test_book.md   # does not generate correct RTF (unlike other formats with Pandoc), missing head/template - see https://github.com/jgm/pandoc/issues/857 and  https://github.com/jgm/pandoc/issues/2140
 pandoc -o test_book_rtf.rtf -s test_book.md
 pandoc -o test_book_odt.odt test_book.md
 pandoc -o test_book_docx.docx test_book.md
