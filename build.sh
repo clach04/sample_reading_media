@@ -18,24 +18,28 @@ echo REQUIRES rar
 # TODO azw
 # TODO azw3
 
+echo Text formats
 cp test_book.md test_book_md.md
 cp test_book.md test_book_txt.txt
 
 pandoc -o test_book_txt_lf_unix.txt --eol=lf test_book_md.md
 pandoc -o test_book_txt_crlf_win.txt --eol=crlf test_book_md.md
 
-
+echo HTML format
 echo FIXME add -s for all textual formats e.g. html, fb2....
 echo TODO add auto TOC generation when possible
 pandoc -o test_book_html.html test_book.md
 
+echo Microsoft doc related
 #pandoc -o test_book.rtf test_book.md   # does not generate correct RTF (unlike other formats with Pandoc), missing head/template - see https://github.com/jgm/pandoc/issues/857 and  https://github.com/jgm/pandoc/issues/2140
 pandoc -o test_book_rtf.rtf -s test_book.md
 pandoc -o test_book_odt.odt test_book.md
 pandoc -o test_book_docx.docx test_book.md
 
+echo PDF format
 pandoc -o test_book_pdf.pdf --metadata title=test_book_pdf --pdf-engine wkhtmltopdf test_book.md
 
+echo ebook formats
 pandoc -o test_book_fb2.fb2 test_book.md
 pandoc -o test_book_epub.epub --metadata title=test_book_epub test_book.md
 pandoc -o test_book_epub_more_detail.epub source_test_book_fb2.fb2
@@ -93,6 +97,7 @@ myrar_uncompressed()
     rar a -m0 ${*}
 }
 
+echo ZIP compressed books
 # TODO consider renaming to make easier for using with koreader - see https://github.com/koreader/koreader/issues/9986 and https://github.com/koreader/koreader/wiki/ZIP
 # ensure zip is in the file name for tools that hide file extensions
 # IDEA - test_book_md_zip.zip  -- test_book_md_zip.md.zip
