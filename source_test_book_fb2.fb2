@@ -21,8 +21,9 @@
 
         <program-used>vim and scite</program-used>
         <src-url>https://github.com/clach04/sample_reading_media</src-url>
-        <version>1.0</version>
+        <version>1.1</version>
         <history>
+            <p>1.1 TODO review is this section following FB2 format correctly? Added sections to test formatting, non-ascii text, and dictionary lookup test - written by hand.</p>
             <p>Initial version, written by hand.</p>
         </history>
     </document-info>
