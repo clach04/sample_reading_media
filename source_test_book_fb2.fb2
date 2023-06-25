@@ -70,5 +70,97 @@
             </section>
         </section>
     </section>
+
+    <section id="more-complex-text">
+        <title>
+            <p>More complex text</p>
+        </title>
+
+        <section id="basic-formatting">
+            <title>
+                <p>Basic formatting</p>
+            </title>
+
+            <section id="emphasis">
+                <title>
+                    <p>Emphasis</p>
+                </title>
+
+                <p>Italic and bold.</p>
+                <p>Is <emphasis>emphasis</emphasis> supported?</p>
+                <p>What about <strong>strong</strong> support?</p>
+                <p>Another test with different style indicators, should match above.</p>
+                <p>Is <emphasis>emphasis</emphasis> supported?</p>
+                <p>What about <strong>strong</strong> support?</p>
+            </section>
+        </section>
+
+        <section id="more-formatting">
+            <title>
+                <p>More formatting</p>
+            </title>
+
+            <section id="preformatted">
+                <title>
+                <p>preformatted</p>
+                </title>
+
+                <p>Are code blocks supported:</p>
+                <empty-line />
+                <p>
+                    <code>12345678901234567890</code>
+                </p>
+                <p>
+                    <code>Hello world</code>
+                </p>
+                <p>
+                    <code>2 == 1 + 1</code>
+                </p>
+                <empty-line />
+                <p>What about inline <code>pre formatted text</code>?</p>
+            </section>
+
+        <section id="quoted">
+            <title>
+                <p>quoted</p>
+            </title>
+
+            <p>Are quoted blocks supported:</p>
+            <cite>
+                <p>This is a quoted text block.</p>
+            </cite>
+        </section>
+
+
+        <section id="lists">
+            <title>
+                <p>Lists</p>
+            </title>
+
+            <!-- TODO review, this came out of Pandoc -->
+            <p>Bullet points:</p>
+            <p>
+            • like</p>
+            <p>
+            • these</p>
+
+            <!-- TODO review, this came out of Pandoc -->
+            <p>Ordered/numbered lists:</p>
+            <p>
+            1. like</p>
+            <p>
+            2. these</p>
+            </section>
+
+            <section id="links">
+                <title>
+                    <p>Links</p>
+                </title>
+                <p>External link to this <a l:href="https://github.com/clach04/sample_reading_media">ebook project page</a>.</p>
+                <p>Internal link to <a l:href="#copyright">Copyright section</a>.</p>
+            </section>
+        </section>
+    </section>
+
 </body>
 </FictionBook>
