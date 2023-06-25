@@ -41,6 +41,16 @@
         <p>Another test paragraph.</p>
     </section>
 
+    <section id="copyright">
+        <title>
+            <p>Copyright</p>
+        </title>
+
+        <p>This ebook is copyright 2021 Chris Clark</p>
+        <p>This ebook is © 2021 Chris Clark</p>
+        <p>Latest version available from https://github.com/clach04/sample_reading_media</p>
+    </section>
+
     <section id="another-test-header-h1">
         <title>
             <p>Another Test Header h1</p>
