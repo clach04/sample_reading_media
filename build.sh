@@ -2,6 +2,12 @@
 
 set -e  # stop on first error
 
+if [ "${1}" = "SKIP_COMICS" ]
+then
+    echo command line SKIP_COMICS
+    SKIP_COMICS=true
+fi
+
 echo about to generate test media
 echo 'REQUIRES pandoc - known to work with version 2.7.3 (issues with 1.19.2.4)'
 echo pandoc check...

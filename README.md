@@ -97,6 +97,8 @@ Sample Windows build with 7-zip and MSYS2
     path %PATH%;C:\msys32_32bit\usr\bin\
     path %PATH%;C:\Program Files\7-Zip\
 
+    C:\msys32_32bit\usr\bin\bash.exe build.sh SKIP_COMICS
+
     C:\msys32_32bit\usr\bin\bash.exe
 
     env SKIP_COMICS=true sh build.sh
