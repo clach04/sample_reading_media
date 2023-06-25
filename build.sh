@@ -115,38 +115,42 @@ create_comics()
     myrar_uncompressed ${base_comic_name}_uncompressed.cbr ${*}
 }
 
-#if [ ! -f "Elf Receiver Radio-Craft August 1936.cbz" ]
-if [ ! -f Elf_Receiver_Radio-Craft_August_1936.cbz ]
+if [ -z "${SKIP_COMICS}" ]
 then
-    # From https://www.contrapositivediary.com/?p=1197
-    wget "http://www.copperwood.com/pub/Elf%20Receiver%20Radio-Craft%20August%201936.cbz"  # download with original name
-    mv "Elf Receiver Radio-Craft August 1936.cbz" Elf_Receiver_Radio-Craft_August_1936.cbz
-fi
+
+    #if [ ! -f "Elf Receiver Radio-Craft August 1936.cbz" ]
+    if [ ! -f Elf_Receiver_Radio-Craft_August_1936.cbz ]
+    then
+        # From https://www.contrapositivediary.com/?p=1197
+        wget "http://www.copperwood.com/pub/Elf%20Receiver%20Radio-Craft%20August%201936.cbz"  # download with original name
+        mv "Elf Receiver Radio-Craft August 1936.cbz" Elf_Receiver_Radio-Craft_August_1936.cbz
+    fi
 
 
 
-# FIXME use create_comics instead
-myzip bobby_make_believe_sample_dir.cbz images/bobby_make_believe/Bobby-Make-Believe_1915__0.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__1.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__2.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__3.jpg
-my7z bobby_make_believe_sample_dir.cb7 images/bobby_make_believe/Bobby-Make-Believe_1915__0.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__1.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__2.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__3.jpg
-myzip_uncompressed bobby_make_believe_sample_dir_uncompressed.cbz images/bobby_make_believe/Bobby-Make-Believe_1915__0.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__1.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__2.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__3.jpg
-my7z_uncompressed bobby_make_believe_sample_dir_uncompressed.cb7 images/bobby_make_believe/Bobby-Make-Believe_1915__0.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__1.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__2.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__3.jpg
-tar -cvf bobby_make_believe_sample_dir.cbt images/bobby_make_believe/Bobby-Make-Believe_1915__0.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__1.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__2.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__3.jpg
+    # FIXME use create_comics instead
+    myzip bobby_make_believe_sample_dir.cbz images/bobby_make_believe/Bobby-Make-Believe_1915__0.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__1.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__2.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__3.jpg
+    my7z bobby_make_believe_sample_dir.cb7 images/bobby_make_believe/Bobby-Make-Believe_1915__0.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__1.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__2.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__3.jpg
+    myzip_uncompressed bobby_make_believe_sample_dir_uncompressed.cbz images/bobby_make_believe/Bobby-Make-Believe_1915__0.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__1.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__2.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__3.jpg
+    my7z_uncompressed bobby_make_believe_sample_dir_uncompressed.cb7 images/bobby_make_believe/Bobby-Make-Believe_1915__0.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__1.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__2.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__3.jpg
+    tar -cvf bobby_make_believe_sample_dir.cbt images/bobby_make_believe/Bobby-Make-Believe_1915__0.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__1.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__2.jpg images/bobby_make_believe/Bobby-Make-Believe_1915__3.jpg
 
-create_comics mono_numbered_png_dir     images/mono_numbered_png/01.png images/mono_numbered_png/02.png images/mono_numbered_png/03.png images/mono_numbered_png/04.png images/mono_numbered_png/05.png images/mono_numbered_png/06.png images/mono_numbered_png/07.png images/mono_numbered_png/08.png images/mono_numbered_png/09.png images/mono_numbered_png/10.png
+    create_comics mono_numbered_png_dir     images/mono_numbered_png/01.png images/mono_numbered_png/02.png images/mono_numbered_png/03.png images/mono_numbered_png/04.png images/mono_numbered_png/05.png images/mono_numbered_png/06.png images/mono_numbered_png/07.png images/mono_numbered_png/08.png images/mono_numbered_png/09.png images/mono_numbered_png/10.png
 
-cd images/bobby_make_believe/
-myzip ../../bobby_make_believe_sample.cbz Bobby-Make-Believe_1915__0.jpg Bobby-Make-Believe_1915__1.jpg Bobby-Make-Believe_1915__2.jpg Bobby-Make-Believe_1915__3.jpg
-my7z ../../bobby_make_believe_sample.cb7 Bobby-Make-Believe_1915__0.jpg Bobby-Make-Believe_1915__1.jpg Bobby-Make-Believe_1915__2.jpg Bobby-Make-Believe_1915__3.jpg
-myzip_uncompressed ../../bobby_make_believe_sample_uncompressed.cbz Bobby-Make-Believe_1915__0.jpg Bobby-Make-Believe_1915__1.jpg Bobby-Make-Believe_1915__2.jpg Bobby-Make-Believe_1915__3.jpg
-my7z_uncompressed ../../bobby_make_believe_sample_uncompressed.cb7 Bobby-Make-Believe_1915__0.jpg Bobby-Make-Believe_1915__1.jpg Bobby-Make-Believe_1915__2.jpg Bobby-Make-Believe_1915__3.jpg
-tar -cvf ../../bobby_make_believe_sample.cbt Bobby-Make-Believe_1915__0.jpg Bobby-Make-Believe_1915__1.jpg Bobby-Make-Believe_1915__2.jpg Bobby-Make-Believe_1915__3.jpg
-rar a -m0 ..\..\bobby_make_believe_sample.cbr Bobby-Make-Believe_1915__0.jpg Bobby-Make-Believe_1915__1.jpg Bobby-Make-Believe_1915__2.jpg Bobby-Make-Believe_1915__3.jpg
-cd ../..
+    cd images/bobby_make_believe/
+    myzip ../../bobby_make_believe_sample.cbz Bobby-Make-Believe_1915__0.jpg Bobby-Make-Believe_1915__1.jpg Bobby-Make-Believe_1915__2.jpg Bobby-Make-Believe_1915__3.jpg
+    my7z ../../bobby_make_believe_sample.cb7 Bobby-Make-Believe_1915__0.jpg Bobby-Make-Believe_1915__1.jpg Bobby-Make-Believe_1915__2.jpg Bobby-Make-Believe_1915__3.jpg
+    myzip_uncompressed ../../bobby_make_believe_sample_uncompressed.cbz Bobby-Make-Believe_1915__0.jpg Bobby-Make-Believe_1915__1.jpg Bobby-Make-Believe_1915__2.jpg Bobby-Make-Believe_1915__3.jpg
+    my7z_uncompressed ../../bobby_make_believe_sample_uncompressed.cb7 Bobby-Make-Believe_1915__0.jpg Bobby-Make-Believe_1915__1.jpg Bobby-Make-Believe_1915__2.jpg Bobby-Make-Believe_1915__3.jpg
+    tar -cvf ../../bobby_make_believe_sample.cbt Bobby-Make-Believe_1915__0.jpg Bobby-Make-Believe_1915__1.jpg Bobby-Make-Believe_1915__2.jpg Bobby-Make-Believe_1915__3.jpg
+    rar a -m0 ..\..\bobby_make_believe_sample.cbr Bobby-Make-Believe_1915__0.jpg Bobby-Make-Believe_1915__1.jpg Bobby-Make-Believe_1915__2.jpg Bobby-Make-Believe_1915__3.jpg
+    cd ../..
 
-cd images/mono_numbered_png/
-create_comics ../../mono_numbered_png    01.png 02.png 03.png 04.png 05.png 06.png 07.png 08.png 09.png 10.png
-cd ../..
+    cd images/mono_numbered_png/
+    create_comics ../../mono_numbered_png    01.png 02.png 03.png 04.png 05.png 06.png 07.png 08.png 09.png 10.png
+    cd ../..
 
+fi  # end of if not SKIP_COMICS
 
 # generate release
 #myzip sample_reading_media.zip *
