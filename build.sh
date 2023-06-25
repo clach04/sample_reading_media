@@ -43,16 +43,6 @@ pandoc -o test_book_pdf_more_detail.pdf --pdf-engine wkhtmltopdf source_test_boo
 
 #pandoc -o test_book.mobi test_book.md  # generates html!?
 
-# Comics
-#if [ ! -f "Elf Receiver Radio-Craft August 1936.cbz" ]
-if [ ! -f Elf_Receiver_Radio-Craft_August_1936.cbz ]
-then
-    # From https://www.contrapositivediary.com/?p=1197
-    wget "http://www.copperwood.com/pub/Elf%20Receiver%20Radio-Craft%20August%201936.cbz"  # download with original name
-    mv "Elf Receiver Radio-Craft August 1936.cbz" Elf_Receiver_Radio-Craft_August_1936.cbz
-fi
-
-
 
 # TODO rar
 #which 7z || alias 7z=p7zi
@@ -96,6 +86,16 @@ myrar_uncompressed()
 {
     rar a -m0 ${*}
 }
+
+
+# Comics
+#if [ ! -f "Elf Receiver Radio-Craft August 1936.cbz" ]
+if [ ! -f Elf_Receiver_Radio-Craft_August_1936.cbz ]
+then
+    # From https://www.contrapositivediary.com/?p=1197
+    wget "http://www.copperwood.com/pub/Elf%20Receiver%20Radio-Craft%20August%201936.cbz"  # download with original name
+    mv "Elf Receiver Radio-Craft August 1936.cbz" Elf_Receiver_Radio-Craft_August_1936.cbz
+fi
 
 
 create_comics()
