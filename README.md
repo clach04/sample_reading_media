@@ -90,6 +90,18 @@ If wkhtmltopdf needs a display (not an issue under Microsoft Windows builds of P
     env  DISPLAY=:1 ./build.sh
     # killall Xvfb
 
+### Windows Build
+
+Sample Windows build with 7-zip and MSYS2
+
+    path %PATH%;C:\msys32_32bit\usr\bin\
+    path %PATH%;C:\Program Files\7-Zip\
+
+    C:\msys32_32bit\usr\bin\bash.exe
+
+    env SKIP_COMICS=true sh build.sh
+
+
 ## Other media samples
 
 ### ebooks
