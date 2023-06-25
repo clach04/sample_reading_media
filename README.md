@@ -122,7 +122,7 @@ If wkhtmltopdf needs a display (not an issue under Microsoft Windows builds of P
   * regular epub (done), stored (no-compression), maximum compression
   * hand crafted html (e.g. include metadata)
   * mobi
-  * prc/pdb?
+  * prc/pdb? - https://github.com/clach04/pyrite-publisher
   * azw
   * azw3
   * add comics
