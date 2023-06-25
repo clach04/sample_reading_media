@@ -109,3 +109,10 @@ Outside the Basic Multilingual Plane (BMP).
 Slightly Smiling Face 🙂
 
 Thumbs Up 👍
+
+Dictionary words
+================
+
+This section has some words to help test dictionary lookup.
+
+Ostentatiously lookup should work, as should ostentatious.
