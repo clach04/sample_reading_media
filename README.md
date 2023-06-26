@@ -73,11 +73,12 @@ See:
 ## Build setup
 
     # Assuming Debian based
-    sudo apt install pandoc zip
+    sudo apt install pandoc
     sudo apt install wkhtmltopdf  # for pdf support
     sudo apt install xvfb  # *might* be needed for wkhtmltopdf
     sudo apt install wget  # for extra cbz comic
-    sudo apt install p7zip-full  # for cb7 comic
+    sudo apt install p7zip-full  # for cb7 comic (also default for zip and CBZ)
+    sudo apt install zip  # optional, can be used instead of 7z
     sudo apt install rar  # for cbr comic
 
 Alternative/minimal build:
