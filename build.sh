@@ -38,6 +38,8 @@ then
     # skip for VERY old versions of pandoc (e.g. 1.19.2.4)
     pandoc -s -o test_book_txt_lf_unix.txt --eol=lf test_book_md.md
     pandoc -s -o test_book_txt_crlf_win.txt --eol=crlf test_book_md.md
+else
+    echo SKIPping different EOL
 fi
 
 echo HTML format
@@ -56,6 +58,8 @@ then
     echo PDF format
     pandoc -s -o test_book_pdf.pdf --metadata title=test_book_pdf --pdf-engine wkhtmltopdf test_book.md
     pandoc -s -o test_book_pdf_more_detail.pdf --pdf-engine wkhtmltopdf source_test_book_fb2.fb2
+else
+    echo SKIPping PDF
 fi
 
 echo ebook formats
@@ -147,7 +151,6 @@ create_comics()
 
 if [ -z "${SKIP_COMICS}" ]
 then
-
     #if [ ! -f "Elf Receiver Radio-Craft August 1936.cbz" ]
     if [ ! -f Elf_Receiver_Radio-Craft_August_1936.cbz ]
     then
@@ -179,7 +182,8 @@ then
     cd images/mono_numbered_png/
     create_comics ../../mono_numbered_png    01.png 02.png 03.png 04.png 05.png 06.png 07.png 08.png 09.png 10.png
     cd ../..
-
+else
+    echo SKIPping comics
 fi  # end of if not SKIP_COMICS
 
 # generate release
