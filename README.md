@@ -82,7 +82,7 @@ See:
 
 Alternative/minimal build:
 
-    env SKIP_COMICS=true env SKIP_PDF=true env SKIP_PANDOC_EOF=true ./build.sh
+    env SKIP_COMICS=true env SKIP_PDF=true env SKIP_PANDOC_EOL=true ./build.sh
 
 Issue build:
 

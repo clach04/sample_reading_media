@@ -33,7 +33,7 @@ echo Text formats
 cp test_book.md test_book_md.md
 cp test_book.md test_book_txt.txt
 
-if [ -z "${SKIP_PANDOC_EOF}" ]
+if [ -z "${SKIP_PANDOC_EOL}" ]
 then
     # skip for VERY old versions of pandoc (e.g. 1.19.2.4)
     pandoc -s -o test_book_txt_lf_unix.txt --eol=lf test_book_md.md
