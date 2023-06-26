@@ -137,17 +137,19 @@ Sample Windows build with 7-zip and MSYS2
   * add images (e.g. to html, embedded and linked, epub, new md file with images etc.) SpaceX images supposed to be PD https://www.flickr.com/photos/spacex/ (see https://99designs.com/blog/resources/public-domain-image-resources/)
   * fb2 with title page/images
   * TOC for epub `pandoc -o OUTPUTNAME.epub INPUTNAME.md --toc --toc-depth=2 --epub-cover-image=COVERIMAGE.png`
-  * regular epub (done), stored (no-compression), maximum compression
+  * regular epub (done)
+  * epub - stored (no-compression)
+  * epub - maximum compression
   * hand crafted html (e.g. include metadata)
   * mobi
   * prc/pdb? - https://github.com/clach04/pyrite-publisher
   * azw
   * azw3
   * add comics
-      * with PNG images
+      * with PNG images (done)
       * 24-bit, 8-bit grayscale, indexed (e.g. 4 colors), and a transparency test
       * epub with images only
-      * No compression - https://github.com/clach04/sample_reading_media/blob/e1e5ae7beeb832d929e875daf87494af2cf8a942/build.sh#L49
+      * No compression (done)
       * with multiple sub-directories
   * metadata for formats that support it
       * mobi
@@ -157,4 +159,4 @@ Sample Windows build with 7-zip and MSYS2
           * https://github.com/comictagger/comictagger
           * https://code.google.com/archive/p/comicbookinfo/ (wiki)
           * https://wiki.mobileread.com/wiki/CBR_and_CBZ#Metadata
-  * consider renaming existing ZIP files - depending on discoveries in https://github.com/koreader/koreader/issues/9986
+  * Names of ZIP files suitable for KoReader - depending on discoveries in https://github.com/koreader/koreader/issues/9986 (done)
