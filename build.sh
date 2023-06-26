@@ -116,16 +116,17 @@ myrar_uncompressed()
 }
 
 echo ZIP compressed books
-# TODO consider renaming to make easier for using with koreader - see https://github.com/koreader/koreader/issues/9986 and https://github.com/koreader/koreader/wiki/ZIP
-# ensure zip is in the file name for tools that hide file extensions
-# IDEA - test_book_md_zip.zip  -- test_book_md_zip.md.zip
-# IDEA - test_book_txt_zip.zip  -- test_book_txt_zip.txt.zip
-
-myzip test_book_md_zip.zip test_book_md.md
-myzip test_book_txt_zip.zip test_book_txt.txt
-myzip test_book_rtf_zip.zip test_book_rtf.rtf
-myzip test_book_html_zip.zip test_book_html.html
-myzip test_book_fb2_zip.zip test_book_fb2.fb2
+# NOTE files named for use with koreader which requires specific filenames
+# see:
+#   - https://github.com/koreader/koreader/issues/9986
+#   - https://github.com/koreader/koreader/wiki/ZIP
+# ensure zip and format is in the file name for tools that hide file extensions
+#
+myzip test_book_md_zip.md.zip test_book_md.md
+myzip test_book_txt_zip.txt.zip test_book_txt.txt
+myzip test_book_rtf_zip.rtf.zip test_book_rtf.rtf
+myzip test_book_html_zip.html.zip test_book_html.html
+myzip test_book_fb2_zip.fb2.zip test_book_fb2.fb2
 myzip source_test_book_fb2_zip.fbz source_test_book_fb2.fb2
 myzip source_test_book_fb2_dot_zip.fb2.zip source_test_book_fb2.fb2
 
