@@ -10,9 +10,9 @@ fi
 
 echo about to generate test media
 echo 'REQUIRES pandoc - known to work with version 2.7.3 (issues with 1.19.2.4)'
-# pandoc 1.19.2.4
+# pandoc 1.19.2.4 - use SKIP_PANDOC_EOL (no issue with FB2 links)
 #   pandoc: unrecognized option `--eol=lf'
-# pandoc 2.5
+# pandoc 2.5 - no workaround other than removing two href links from source_test_book_fb2.fb2
 #   Couldn't parse FB2 file: link without required href.
 
 echo pandoc  check...
