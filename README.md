@@ -131,6 +131,7 @@ Sample Windows build with 7-zip and MSYS2
   * https://github.com/NaturalHistoryMuseum/SMALL_TAGGED_GEOREF
   * https://github.com/NaturalHistoryMuseum/ClaytonHerbarium-imgs/tree/master/imgs
   * https://github.com/NaturalHistoryMuseum/DuxburyCollectionImgs
+      * https://github.com/orgs/NaturalHistoryMuseum/repositories?type=all&q=img
 
 ### Videos
 
