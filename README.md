@@ -129,6 +129,7 @@ Sample Windows build with 7-zip and MSYS2
   * Images https://github.com/recurser/exif-orientation-examples
   * Images https://sourceforge.net/p/exiftool/code/ci/master/tree/t/images/
   * https://github.com/NaturalHistoryMuseum/SMALL_TAGGED_GEOREF
+  * https://github.com/NaturalHistoryMuseum/ClaytonHerbarium-imgs/tree/master/imgs
   * https://github.com/NaturalHistoryMuseum/DuxburyCollectionImgs
 
 ### Videos
