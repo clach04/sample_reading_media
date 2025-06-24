@@ -116,6 +116,7 @@ Sample Windows build with 7-zip and MSYS2
   * https://github.com/koreader/test-data
   * ebook (epub, mobi and azw3 formats) https://github.com/regueiro/spring-reference-ebook
   * https://github.com/DistriNet/evil-epubs
+  * https://github.com/jorisschellekens/borb-pdf-corpus
 
 ### Comics
 
