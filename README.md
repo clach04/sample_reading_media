@@ -117,6 +117,7 @@ Sample Windows build with 7-zip and MSYS2
   * ebook (epub, mobi and azw3 formats) https://github.com/regueiro/spring-reference-ebook
   * https://github.com/DistriNet/evil-epubs
   * https://github.com/jorisschellekens/borb-pdf-corpus
+  https://github.com/chriskempson/portable-humble-little-ruby-book - .mobi,.epub, and .pages source
 
 ### Comics
 
