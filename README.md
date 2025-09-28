@@ -30,6 +30,7 @@ Test sample ebooks, etc. Formats:
   * test_book_pdf.pdf
   * test_book_fb2.fb2
   * test_book_epub.epub
+  * test_book_pandoc.md.epub
   * test_book_md_zip.zip
   * test_book_txt_zip.zip
   * test_book_html_zip.zip
@@ -37,7 +38,7 @@ Test sample ebooks, etc. Formats:
   * test_book_rtf.rtf
   * test_book_rtf_zip.zip
 
-All the above sample books are generated from [test_book.md](./test_book.md).
+All the above sample books are generated from [test_book.md](./test_book.md) (NOTE test_book_pandoc.md.epub is built from test_book_pandoc.md which is a variant of test_book.md).
 
   * source_test_book_fb2.fb2
   * source_test_book_fb2_zip.fbz
@@ -145,6 +146,7 @@ Sample Windows build with 7-zip and MSYS2
   * add images (e.g. to html, embedded and linked, epub, new md file with images etc.) SpaceX images supposed to be PD https://www.flickr.com/photos/spacex/ (see https://99designs.com/blog/resources/public-domain-image-resources/)
   * fb2 with title page/images
   * TOC for epub `pandoc -o OUTPUTNAME.epub INPUTNAME.md --toc --toc-depth=2 --epub-cover-image=COVERIMAGE.png`
+  * Pandoc generated epub using external metadata file (YAML/YML or json).
   * regular epub (done)
   * epub - stored (no-compression)
   * epub - maximum compression

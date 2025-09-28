@@ -65,6 +65,7 @@ fi
 echo ebook formats
 pandoc -s -o test_book_fb2.fb2 test_book.md
 pandoc -s -o test_book_epub.epub --metadata title=test_book_epub test_book.md
+pandoc -s -o test_book_pandoc.md.epub test_book_pandoc.md
 pandoc -s -o test_book_epub_more_detail.epub source_test_book_fb2.fb2
 
 #pandoc -s -o test_book.mobi test_book.md  # generates html!?
