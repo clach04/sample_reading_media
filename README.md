@@ -30,7 +30,10 @@ Test sample ebooks, etc. Formats:
   * test_book_pdf.pdf
   * test_book_fb2.fb2
   * test_book_epub.epub
-  * test_book_pandoc.md.epub
+  * test_book_pandoc_*.epub
+      * test_book_pandoc_tocauto.epub
+      * test_book_pandoc_toc2.epub  Limited to level 2
+      * test_book_pandoc_toc3.epub  Limited to level 3
   * test_book_md_zip.zip
   * test_book_txt_zip.zip
   * test_book_html_zip.zip
@@ -38,7 +41,7 @@ Test sample ebooks, etc. Formats:
   * test_book_rtf.rtf
   * test_book_rtf_zip.zip
 
-All the above sample books are generated from [test_book.md](./test_book.md) (NOTE test_book_pandoc.md.epub is built from test_book_pandoc.md which is a variant of test_book.md).
+All the above sample books are generated from [test_book.md](./test_book.md) (NOTE test_book_pandoc_*.epub are built from test_book_pandoc.md which is a variant of test_book.md).
 
   * source_test_book_fb2.fb2
   * source_test_book_fb2_zip.fbz
